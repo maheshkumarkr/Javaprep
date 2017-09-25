@@ -1,5 +1,7 @@
 package com.progs;
 
+import java.util.Scanner; 
+
 public class Prime {
 
 	/**
@@ -7,7 +9,18 @@ public class Prime {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+	
+		String result;
+		Scanner in = new Scanner(System.in);
+		System.out.println(" Enter a positive integer to check if it is Prime or Not");
+		
+		int N = in.nextInt();
+		
+		Prime checkPrime = new Prime();
+		result = checkPrime.isPrime(N);
+		
+		System.out.println(result);
+		
 		
 	}
 	

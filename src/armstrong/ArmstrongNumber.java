@@ -20,6 +20,10 @@ public class ArmstrongNumber {
 				.println("Input a number to check if it is an Armstrong number");
 		int n = in.nextInt();
 		in.close();
+		System.out.println(isArmStrongNumer(n));
+
+	}
+	public String isArmStrongNumer(int n){
 		int sum = 0;
 		int temp = n;
 
@@ -46,9 +50,9 @@ public class ArmstrongNumber {
 		}
 
 		if (n == sum)
-			System.out.println(n + " is an Armstrong number.");
+			return(n + " is an Armstrong number.");
 		else
-			System.out.println(n + " is not an Armstrong number.");
-
+			return(n + " is not an Armstrong number.");
 	}
+	
 }
